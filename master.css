@@ -4,6 +4,7 @@ body{
 
 #bar{ /*navbar*/
     background-color: black;
+    width: 100%;
 }
 
 .title{ /* title of all files*/
@@ -56,7 +57,7 @@ body{
 
 .menu > ul > li{
     float:left;
-    display:inline-block;;
+    display:inline-block;
     position:relative;
     font-size:19px;
 }
@@ -125,4 +126,18 @@ ul a{ /* color of text in navbar */
 .logoff {
     text-align: center;
     padding:3%;
+}
+.pageTitle{
+    padding-left: 8%;
+    font-size: 25px;
+    display: inline-block;
+}
+.add-group{
+    float: right;
+    width: auto;
+    height: auto;
+    margin-right: 8%;
+    margin-top: 1%;
+    /*display: inline-block;*/
+
 }
