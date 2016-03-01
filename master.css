@@ -10,7 +10,7 @@ body{
 .title{ /* title of all files*/
     font-family:"Arial";
     font-size:50px;
-    text-align: center;
+    text-align: left;
     color: white;
     background: black;
 }
@@ -22,7 +22,7 @@ body{
 }
 
 .clearfix {
-    padding-right: 20px;
+    padding-right: 0;
     margin-bottom: 0;
 }
 
@@ -63,13 +63,15 @@ body{
 }
 
 .menu>ul>li>a{
-    padding: 15px 70px;
+    padding: 15px 50px;
     display:inline-block;
     text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+    width: 222px;
+    /*padding-left: 0px;*/
 }
 
 .menu > ul> li:hover > a{
-    background:#FFF056;
+    background: #31a5ff;
     color: blue;
     text-decoration: none;
 }
@@ -82,7 +84,7 @@ body{
 }
 
 .sub-menu{
-    width:160%;
+    width:222px;
     padding: 5px 0px;
     position:absolute;
     top:100%;
@@ -145,4 +147,20 @@ ul a{ /* color of text in navbar */
 }
 .form-submit {
     margin-bottom: 25px;
+}
+.fixMargin {
+    margin-left: 10px;
+}
+.aboutUS{
+    border: black solid 2px;
+    width: 550px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+}
+.desc {
+    font-size: 15px;
+    text-align: left;
 }
