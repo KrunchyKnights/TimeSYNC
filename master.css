@@ -139,5 +139,10 @@ ul a{ /* color of text in navbar */
     margin-right: 8%;
     margin-top: 1%;
     /*display: inline-block;*/
-
+}
+.form-control {
+    margin-bottom: 30px;
+}
+.form-submit {
+    margin-bottom: 25px;
 }
