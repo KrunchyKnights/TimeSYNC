@@ -5,8 +5,8 @@ ini_set('display_errors',1);
 error_reporting(E_ALL);
 
 $host="localhost";
-$db_user = "root";
-$db_pass = "killer3.3";
+$db_user = "";
+$db_pass = "";
 $dbase = "timesynch";
 
 
