@@ -65,7 +65,7 @@
     <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='POST'>
     Email: <input type="text" name="login_email" value='<?php echo $login_email; ?>'><br>
     Password: <input type="password" name="login_pass" value="<?php echo $login_pass; ?>"><br>
-    <button type="submit" value="register">Log In</button>
+    <button type="submit" value="login">Log In</button>
     </form>
 </div>
 
