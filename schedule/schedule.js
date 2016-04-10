@@ -12,7 +12,7 @@ for(i=0;i<Time.length+1;i++){
             table.append('<td>'+Days[j]+'</td>');
         else{
             if(j!=0)
-                table.append('<td><button></button></td>');
+                table.append('<td><div class="green"></div></td>');
             else
                 table.append('<td>'+Time[i-1]+'</td>');
         }
@@ -22,5 +22,9 @@ for(i=0;i<Time.length+1;i++){
 
 
 
-
+$(document).ready(function() {
+    $('div').click(function() {
+        $(this).toggleClass("green");
+    });
+});
 
