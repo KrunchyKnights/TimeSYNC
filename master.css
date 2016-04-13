@@ -1,5 +1,9 @@
 body{
-    background-color:white;
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 #bar{ /*navbar*/
@@ -45,10 +49,10 @@ body{
     transition:all linear 0.15s;
 }
 
-.menu li:hover > a{
-    text-decoration: none;
-    color:darkred;
-}
+/*.menu li:hover > a{*/
+    /*text-decoration: none;*/
+    /*color:darkred;*/
+/*}*/
 
 .menu .arrow{
     font-size: 08px;
@@ -71,8 +75,8 @@ body{
 }
 
 .menu > ul> li:hover > a{
-    background: #31a5ff;
-    color: blue;
+    background: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -154,11 +158,12 @@ ul a{ /* color of text in navbar */
 .aboutUS{
     border: black solid 2px;
     width: 550px;
-    margin-left: 50px;
+    margin-right: 100px;
     font-size: 25px;
+    color: white;
     text-align: center;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 150px;
 }
 .desc {
     font-size: 15px;

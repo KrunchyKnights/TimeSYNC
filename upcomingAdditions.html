@@ -6,7 +6,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="master.css"/>
     <meta charset="UTF-8">
-    <title>Calendar</title>
+    <title>Home</title>
 </head>
 <body>
 <!--<div class="title"><a href="home.html" class="fixMargin">TimeSYNC</a></div>-->
@@ -14,25 +14,33 @@
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li><a href="index.html">TimeSYNC</a></li>
+                <li><a href="index.html"><img src="timesync.png" height="40px", width="70px"></a>
+                    <ul class="sub-menu">
+                        <li><a href="aboutUS.html">About timeSYNC</a></li>
+                        <li><a href="whoWeAre.html">Who We Are</a></li>
+                        <li><a href="ourGoal.html">Our Goal</a></li>
+                        <li><a href="upcomingAdditions.html">What's Coming</a></ul></li>
+
+                </li>
                 <li><a href="calendar.html">My Schedule</a></li>
                 <li><a href="myGroups.html">My Groups</a></li>
                 <li><a href="settings.html">Settings<span class="arrow">&#9660;</span></a>
                     <a class="sub-menu" href="logout.html">Logout</a>
-
                 </li>
-
             </ul>
         </nav>
     </div>
 </div>
-<div class="groups">
-    <p class="pageTitle"><b>My Schedule</b>
-    </p>
-    <button class="add-group" id="addgrp">
-        <span class="glyphicon glyphicon-plus"></span></button>
-    <p><iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America/Phoenix" style="border: 0; margin-left: 250px" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
 
+<div class="aboutUS pull-right"><b>WHAT'S COMING</b>
+    <p class="desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum."
+
+    </p>
 </div>
+
 </body>
 </html>
