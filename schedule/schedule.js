@@ -3,9 +3,29 @@ var Time =["1:00 A.M.","1:30 A.M.","2:00 A.M.","2:30 A.M.","3:00 A.M.","3:30 A.M
 
 
 // creates the table
+function checkschedule(){
+        $.ajax({
+            url:"GetSchedule.php",
+			data: "",                        //you can insert url argumnets here to pass to api.php for example "id=5&parent=6"
+			dataType: 'json',   
+            success: function(data){
+				var cat = data[0];
+				if (cat == 0)
+					newschedule();
+				$(document).ready(function() {
+					$('div').click(function() {
+						$(this).toggleClass("green");
+					});
+				});
+            }
+        });
+
+ }
+    
+
+function newschedule(){
 $('#dynamictable').append('<tr></tr>');
 var table = $('#dynamictable').children();
-
 for(i=0;i<Time.length+1;i++){
     for(j=0;j<Days.length;j++){
         if(i==0 )
@@ -19,6 +39,7 @@ for(i=0;i<Time.length+1;i++){
     }
     table.append('<tr></tr>');
 }
+}
 
 
 
@@ -28,3 +49,4 @@ $(document).ready(function() {
     });
 });
 
+checkschedule();
