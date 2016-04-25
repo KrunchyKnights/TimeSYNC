@@ -76,7 +76,7 @@
         <nav class="menu">
             <ul class="clearfix">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../calendar.html">My Schedule</a></li>
+                <li><a href="../schedule/calendar.php">My Schedule</a></li>
                 <li><a href="../myGroups.html">My Groups</a></li>
                 <li><a href="../settings.html">Settings<span class="arrow">&#9660;</span></a>
                     <a class="sub-menu" href="../logout.html">Logout</a>
