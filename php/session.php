@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 $host="localhost";
 $db_user = "root";
-$db_pass = "";
+$db_pass = "killer3.3";
 $dbase = "timesynch";
 
 

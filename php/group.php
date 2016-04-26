@@ -4,7 +4,7 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <link type="text/css" rel="stylesheet" href="master.css"/>
+    <link type="text/css" rel="stylesheet" href="../master.css"/>
     <meta charset="UTF-8">
     <title>MyGroups</title>
 </head>
@@ -13,6 +13,7 @@
 <?php
     include "session.php";
     include "logged_in.php";
+    
     $group_name = $public = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -47,22 +48,23 @@
 
 ?>
 
-<div class="title"><a href="index.html">TimeSYNC</a></div>
+<div class="title"><a href="../index.html">TimeSYNC</a></div>
 <div id=bar class="navbar navbar-inverse navbar-static-top">
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calendar.html">My Schedule</a></li>
-                <li><a href="myGroups.html">My Groups</a></li>
-                <li><a href="settings.html">Settings<span class="arrow">&#9660;</span></a>
-                    <a class="sub-menu" href="logout.html">Logout</a>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../schedule/calendar.php">My Schedule</a></li>
+                <li><a href="">My Groups</a></li>
+                <li><a href="../settings.html">Settings<span class="arrow">&#9660;</span></a>
+                    <a class="sub-menu" href="logout.php">Logout</a>
                 </li>
             </ul>
         </nav>
     </div>
 </div>
-<div class="groups">
+
+<div class="my-groups">
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method='POST'>
     Group Name: <input type="text" name="group_name" value="<?php echo $group_name?>"><br>
@@ -71,7 +73,7 @@
     </form>
 
     <br>
-    <p class="pageTitle"><b>My Groups</b>
+    <p class="pageTitle"><b>My Groups</b><br>
     <?php 
     $mem_result = $mysqli->query("SELECT GROUP_ID FROM MEMBERS WHERE USER_ID='$_SESSION[ID]'");
     while ($row = $mem_result->fetch_array(MYSQLI_ASSOC)) {
@@ -89,6 +91,31 @@
 
 
 </div>
+
+<div class="groups">
+
+    <br>
+    <p class="pageTitle"><b>All Groups</b><br>
+    <?php
+    $group_result = $mysqli->query("SELECT GROUP_NAME FROM GROUPS");
+    while ($row = $group_result->fetch_array(MYSQLI_ASSOC)) {
+        echo $row['GROUP_NAME'];
+        #echo "<div class='tab'>";
+        echo " <a href=''>Join</a>";
+        #echo "</div>";
+        echo "<br>";
+    }
+    ?>
+    </p>
+
+
+<!--     <button class="add-group" id="addgrp">
+        <span class="glyphicon glyphicon-plus">
+            
+        </span></button> -->
+
+</div>
+
 
 <script>
     document.getElementById(addgrp).addEventListener("click", add_group());
