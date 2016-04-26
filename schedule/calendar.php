@@ -8,8 +8,10 @@
     <link href="css/dp.css" rel="stylesheet" type="text/css" />   
     <link href="css/alert.css" rel="stylesheet" type="text/css" /> 
     <link href="css/main.css" rel="stylesheet" type="text/css" /> 
-    
-
+    <link type="text/css" rel="stylesheet" href="css/master.css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	
+	
     <script src="src/jquery.js" type="text/javascript"></script>  
     
     <script src="src/Plugins/Common.js" type="text/javascript"></script>    
@@ -209,11 +211,33 @@
             });
             
         });
-    </script>    
+    </script>  
+	
 </head>
 <body>
-    <div>
+<div id=bar class="navbar navbar-inverse navbar-static-top">
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a href="index.html"><img src="timesync.png" height="40px", width="70px"></a>
+                    <ul class="sub-menu">
+                    <li><a href="aboutUS.html">About timeSYNC</a></li>
+                    <li><a href="whoWeAre.html">Who We Are</a></li>
+                    <li><a href="ourGoal.html">Our Goal</a></li>
+                    <li><a href="upcomingAdditions.html">What's Coming</a></ul></li>
 
+                </li>
+                <li><a href="schedule/calendar.php">My Schedule</a></li>
+                <li><a href="myGroups.html">My Groups</a></li>
+                <li><a href="settings.html">Settings<span class="arrow">&#9660;</span></a>
+                    <a class="sub-menu" href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div>
       <div id="calhead" style="padding-left:1px;padding-right:1px;">          
             <div class="cHead"><div class="ftitle">My Calendar</div>
             <div id="loadingpannel" class="ptogtitle loadicon" style="display: none;">Loading data...</div>
