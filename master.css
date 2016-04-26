@@ -11,6 +11,7 @@ body{
 #bar{ /*navbar*/
     background-color: black;
     width: 100%;
+    height: 60px;
 }
 
 .title{ /* title of all files*/
