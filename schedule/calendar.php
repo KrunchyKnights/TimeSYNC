@@ -227,7 +227,7 @@
                     <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
                 </li>
                 <li><a href="../schedule/calendar.php">My Schedule</a></li>
-                <li><a href="../myGroups.html">My Groups</a></li>
+                <li><a href="../php/group.php">My Groups</a></li>
                 <li><a href="../php/logout.php">Login/Logout</a></li>
             </ul>
         </nav>
