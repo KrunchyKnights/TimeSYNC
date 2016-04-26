@@ -26,7 +26,7 @@
                    $_SESSION['EMAIL'] = $row['EMAIL'];
                    $_SESSION['USER'] = $row['USERNAME'];
 
-                    header("location: ../group.php");
+                    header("location: group.php");
                     mysqli_close($mysqli);
                 }
             }
