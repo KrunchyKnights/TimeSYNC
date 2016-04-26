@@ -85,7 +85,7 @@
                 </li>
                 <li><a href="../calendar.html">My Schedule</a></li>
                 <li><a href="group.php">My Groups</a></li>
-                <li><a href="logout.php">Logout</a>
+                <li><a href="logout.php">Login/Logout</a>
                 </li>
             </ul>
         </nav>

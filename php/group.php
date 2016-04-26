@@ -62,7 +62,7 @@
                 </li>
                 <li><a href="../schedule/calendar.php">My Schedule</a></li>
                 <li><a href="">My Groups</a></li>
-                <li><a href="/php/logout.php">Logout</a>
+                <li><a href="/php/logout.php">Login/Logout</a>
 
                 </li>
             </ul>
