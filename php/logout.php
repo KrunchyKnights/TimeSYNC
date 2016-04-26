@@ -1,6 +1,7 @@
 <?php 
 	// Destroys the current session then redirects the user to login page.
-	include "server.php";
+	include "session.php";
+
 	session_destroy();
-	header("location: login.php");
+	header("location: ../index.html");
 ?>
