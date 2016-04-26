@@ -34,7 +34,6 @@
     }
 ?>
 
-<div class="title" style="text-align: left;"><a href="../index.html" style="margin-left: 10px;">TimeSYNC</a>
     <!-- <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
             <input type="text" class="form-control" name="username" placeholder="Username">
@@ -43,32 +42,40 @@
             <input type="text" class="form-control" name="password" placeholder="Password">
         </div>
         <button type="submit" class="form-submit btn btn-default" style="margin-right: 10px;">Sign In</button>
-    </form> --></div>
+    </form> -->
 
 <div id=bar class="navbar navbar-inverse navbar-static-top">
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../calendar.html">My Schedule</a></li>
-                <li><a href="group.php">My Groups</a></li>
-                <li><a href="/php/login.php">Logout</a>
-
+                <li><a href="../index.html"><img src="../timesync.png" height="40px", width="70px"></a>
+                    <ul class="sub-menu">
+                        <li><a href="../aboutUS.html">About timeSYNC</a></li>
+                        <li><a href="../whoWeAre.html">Who We Are</a></li>
+                        <li><a href="../ourGoal.html">Our Goal</a></li>
+                        <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
 
                 </li>
-
+                <li><a href="../calendar.html">My Schedule</a></li>
+                <li><a href="group.php">My Groups</a></li>
+                <li><a href="/php/logout.php">Login/Logout</a>
+                </li>
             </ul>
         </nav>  
     </div>
 </div>
 
-<div id ='login' class=''>
+<div class="aboutUS pull-right">
     <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='POST'>
     Email: <input type="text" name="login_email" value='<?php echo $login_email; ?>'><br>
-    Password: <input type="password" name="login_pass" value="<?php echo $login_pass; ?>"><br>
+    Password: <input type="password" name="login_pass" value="<?php echo $login_pass; ?>"><br><br>
     <button type="submit" value="login">Log In</button>
     </form>
+    <br><br>
+    <a href="registration.php">Don't have an account?</a>
 </div>
+
+
 
 </body>
 </html>

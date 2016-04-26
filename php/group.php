@@ -48,15 +48,21 @@
 
 ?>
 
-<div class="title"><a href="../index.html">TimeSYNC</a></div>
 <div id=bar class="navbar navbar-inverse navbar-static-top">
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html"><img src="../timesync.png" height="40px", width="70px"></a>
+                    <ul class="sub-menu">
+                        <li><a href="../aboutUS.html">About timeSYNC</a></li>
+                        <li><a href="../whoWeAre.html">Who We Are</a></li>
+                        <li><a href="../ourGoal.html">Our Goal</a></li>
+                        <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
+
+                </li>
                 <li><a href="../schedule/calendar.php">My Schedule</a></li>
                 <li><a href="">My Groups</a></li>
-                <li><a href="/php/login.php">Logout</a>
+                <li><a href="/php/logout.php">Logout</a>
 
                 </li>
             </ul>
@@ -64,7 +70,7 @@
     </div>
 </div>
 
-<div class="my-groups">
+<div class="aboutUS pull-right">
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method='POST'>
     Group Name: <input type="text" name="group_name" value="<?php echo $group_name?>"><br>
@@ -89,20 +95,13 @@
             
         </span></button> -->
 
-
-</div>
-
-<div class="groups">
-
     <br>
-    <p class="pageTitle"><b>All Groups</b><br>
+    <p><b>All Groups</b><br>
     <?php
     $group_result = $mysqli->query("SELECT GROUP_NAME FROM GROUPS");
     while ($row = $group_result->fetch_array(MYSQLI_ASSOC)) {
         echo $row['GROUP_NAME'];
-        #echo "<div class='tab'>";
         echo " <a href=''>Join</a>";
-        #echo "</div>";
         echo "<br>";
     }
     ?>

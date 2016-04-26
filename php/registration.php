@@ -61,7 +61,6 @@
     }
 ?>
 
-<div class="title" style="text-align: left;"><a href="../index.html" style="margin-left: 10px;">TimeSYNC</a>
     <!-- <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
             <input type="text" class="form-control" name="username" placeholder="Username">
@@ -70,31 +69,35 @@
             <input type="text" class="form-control" name="password" placeholder="Password">
         </div>
         <button type="submit" class="form-submit btn btn-default" style="margin-right: 10px;">Sign In</button>
-    </form> --></div>
+    </form> -->
 
 <div id=bar class="navbar navbar-inverse navbar-static-top">
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../calendar.html">My Schedule</a></li>
-                <li><a href="group.php">My Groups</a></li>
-                <li><a href="/php/login.php">Logout</a>
-
+                <li><a href="../index.html"><img src="../timesync.png" height="40px", width="70px"></a>
+                    <ul class="sub-menu">
+                        <li><a href="../aboutUS.html">About timeSYNC</a></li>
+                        <li><a href="../whoWeAre.html">Who We Are</a></li>
+                        <li><a href="../ourGoal.html">Our Goal</a></li>
+                        <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
 
                 </li>
-
+                <li><a href="../calendar.html">My Schedule</a></li>
+                <li><a href="group.php">My Groups</a></li>
+                <li><a href="logout.php">Logout</a>
+                </li>
             </ul>
         </nav>
     </div>
 </div>
 
-<div id ='signIn' class=''>
+<div class='aboutUS pull-right'>
     <form action="" method='POST'>
     Username: <input type="text" name="Username" value='<?php echo $Username; ?>'><br>
     Email: <input type="text" name="Email" value='<?php echo $Email; ?>'><br>
     Password: <input type="password" name="Password" value="<?php echo $Password; ?>"><br>
-    Confirm_Password: <input type="password" name="Confirm_Password" value="<?php echo $Confirm_Password; ?>"><br>
+    Confirm_Password: <input type="password" name="Confirm_Password" value="<?php echo $Confirm_Password; ?>"><br><br>
     <button type="submit" value="register">Sign Up</button>
     </form>
 </div>
