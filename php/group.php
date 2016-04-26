@@ -38,7 +38,7 @@
 
                 mysqli_query($mysqli, $con_ug);
                 mysqli_close($mysqli);
-                header("location: ../index.html");
+                header("location: ../group.php");
             } else {
                 echo "Something went wrong!";
                 mysqli_close($mysqli);

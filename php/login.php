@@ -26,7 +26,7 @@
                    $_SESSION['EMAIL'] = $row['EMAIL'];
                    $_SESSION['USER'] = $row['USERNAME'];
 
-                    header("location: ../index.html");
+                    header("location: ../group.php");
                     mysqli_close($mysqli);
                 }
             }
@@ -56,7 +56,7 @@
                         <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
 
                 </li>
-                <li><a href="../calendar.html">My Schedule</a></li>
+                <li><a href="schedule/calendar.php">My Schedule</a></li>
                 <li><a href="group.php">My Groups</a></li>
                 <li><a href="/php/logout.php">Login/Logout</a>
                 </li>
