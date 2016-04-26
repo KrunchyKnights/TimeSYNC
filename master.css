@@ -160,21 +160,60 @@ ul a{ /* color of text in navbar */
 .fixMargin {
     margin-left: 10px;
 }
+
 .aboutUS{
     border: black solid 2px;
     width: 550px;
-    margin-right: 100px;
+    margin-right: 150px;
     font-size: 25px;
     color: white;
     text-align: center;
     display: inline-block;
-    margin-top: 150px;
+    margin-top: 50px;
 }
-.desc {
+
+.aboutUS button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 4.5px 20px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.aboutUS button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+}
+
+.aboutUS button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+}
+
+.aboutUS .desc {
     font-size: 15px;
     text-align: left;
 }
 
+.aboutUS input {
+    color: black;
+}
 
 div {
     height:50px;
