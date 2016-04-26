@@ -83,7 +83,7 @@
                         <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
 
                 </li>
-                <li><a href="schedule/calendar.php">My Schedule</a></li>
+                <li><a href="../schedule/calendar.php">My Schedule</a></li>
                 <li><a href="group.php">My Groups</a></li>
                 <li><a href="logout.php">Login/Logout</a>
                 </li>

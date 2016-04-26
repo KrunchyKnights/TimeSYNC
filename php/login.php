@@ -5,7 +5,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="../master.css"/>
     <meta charset="UTF-8">
-    <title>LogIn</title>
+    <title>Log In</title>
 </head>
 <body>
 
@@ -56,7 +56,7 @@
                         <li><a href="../upcomingAdditions.html">What's Coming</a></ul></li>
 
                 </li>
-                <li><a href="schedule/calendar.php">My Schedule</a></li>
+                <li><a href="../schedule/calendar.php">My Schedule</a></li>
                 <li><a href="group.php">My Groups</a></li>
                 <li><a href="/php/logout.php">Login/Logout</a>
                 </li>
